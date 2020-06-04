@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Historique"
+    android:background="@drawable/back">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/TBar"/>
+
+
+    <Spinner
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        android:id="@+id/spinChoixMatiere"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@id/TBar"
+        android:layout_marginStart="5dp"/>
+    <Spinner
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/spinChoixMatiere"
+        android:id="@+id/spinChoixNiveau"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginStart="5dp"/>
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@id/spinChoixMatiere"
+        android:id="@+id/spinChoixSection"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@id/TBar"/>
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@id/spinChoixNiveau"
+        android:layout_below="@id/spinChoixSection"
+        android:id="@+id/spinChoixClasse"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinChoixClasse"
+        android:background="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay"
+        android:layout_below="@id/calendarView">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisir l'Heure: "
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:labelFor="@+id/spinChoixHeure"/>
+        <Spinner
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="25dp"
+            android:background="@color/white"
+            android:id="@+id/spinChoixHeure"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chercher"
+        android:layout_below="@id/lay"
+        android:id="@+id/btnChercher"
+        android:layout_margin="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>

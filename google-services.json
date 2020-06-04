@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "659313365",
+    "firebase_url": "https://tekupproject.firebaseio.com",
+    "project_id": "tekupproject",
+    "storage_bucket": "tekupproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659313365:android:391584631004d03d45085c",
+        "android_client_info": {
+          "package_name": "com.example.tekupproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659313365-kfa7q1o8k6geeaoe9u4ld3gmlbbejpqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tekupproject",
+            "certificate_hash": "9786896e736090feb68bd4c32f469e814ebda206"
+          }
+        },
+        {
+          "client_id": "659313365-e66ui73fvfkd66bes5motdkml6l8tm9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4bTaHD8Gv2YY9E5J6Y_1pl3VX66ndhpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659313365-e66ui73fvfkd66bes5motdkml6l8tm9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

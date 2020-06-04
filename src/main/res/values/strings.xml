@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">tekupproject</string>
+    <string name="slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc nunc, volutpat nec interdum id, iaculis quis ligula. Aenean rhoncus odio ut enim sagittis, sed cursus sem tempor. Ut vitae interdum ante. </string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="todo">TODO</string>
+</resources>

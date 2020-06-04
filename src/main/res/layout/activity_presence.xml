@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Presence"
+    android:background="@drawable/back">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/TBar">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <Spinner
+        android:id="@+id/spinMatiere"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TBar"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnMatiere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/spinMatiere"
+        android:text="Confirmer Matiere" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:layout_below="@id/btnMatiere"
+
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
